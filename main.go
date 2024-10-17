@@ -7,6 +7,9 @@ import (
 	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
 )
 
+//go:embed アプリ明朝.ttf
+var font []byte
+
 type Game struct{}
 
 func (g *Game) Update() error {
