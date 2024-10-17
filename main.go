@@ -1,11 +1,15 @@
 package main
 
 import (
+	_ "embed"
 	"log"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
 )
+
+//go:embed アプリ明朝.ttf
+var font []byte
 
 type Game struct{}
 
